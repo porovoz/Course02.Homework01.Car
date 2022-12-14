@@ -1,42 +1,36 @@
 public class Car {
-    String brand;
-    String model;
-    double engineVolume;
-    String color;
-    int productionYear;
-    String productionCountry;
+    public String brand;
+    public String model;
+    public double engineVolume;
+    public String color;
+    public int productionYear;
+    public String productionCountry;
 
     public Car(String brand, String model, int productionYear, String productionCountry, String color, double engineVolume) {
         if (brand == null || brand.isEmpty()) {
-            this.brand = "default";
-        } else {
+            brand = "default";
+        }
             this.brand = brand;
-        }
         if (model == null || model.isEmpty()) {
-            this.model = "default";
-        } else {
+            model = "default";
+        }
             this.model = model;
-        }
         if (productionYear <= 0) {
-            this.productionYear = 2000;
-        } else {
+            productionYear = 2000;
+        }
             this.productionYear = productionYear;
-        }
         if (productionCountry == null || productionCountry.isEmpty()) {
-            this.productionCountry = "default";
-        } else {
+            productionCountry = "default";
+        }
             this.productionCountry = productionCountry;
-        }
         if (color == null || color.isEmpty()) {
-            this.color = "white";
-        } else {
+            color = "white";
+        }
             this.color = color;
-        }
         if (engineVolume <= 0) {
-            this.engineVolume = 1.5;
-        } else {
-            this.engineVolume = engineVolume;
+            engineVolume = 1.5;
         }
+            this.engineVolume = engineVolume;
     }
 
     @Override
